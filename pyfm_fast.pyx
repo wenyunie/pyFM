@@ -428,7 +428,7 @@ cdef class FM_fast(object):
                                           validation_xnnz, validation_y)
             if self.verbose > 0:
                 error_type = "MSE" if self.task == REGRESSION else "log loss"
-                print "Training %s: %.5f" % (error_type, (self.sumloss / self.count))
+                print("Training %s: %.5f" % (error_type, (self.sumloss / self.count)))
 
     def __getstate__(self):
         # Implements Pickle interface.
